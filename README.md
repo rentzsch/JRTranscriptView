@@ -16,6 +16,10 @@ Highlights:
 Version History
 ---------------
 
+### v1.1: Apr 25 2014
+
+- [NEW] Add `-initWithCoder:` so you can use JRTranscript view in nibs/xibs/storyboards. ([David Hoerl](https://github.com/rentzsch/JRTranscriptView/pull/2))
+
 ### v1.0: Apr 14 2014
 
 - Initial release.
