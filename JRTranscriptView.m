@@ -22,24 +22,24 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-	[self commonInitForJRTranscript];
+    [self commonInitForJRTranscript];
     return self;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
-	[self commonInitForJRTranscript];
+    [self commonInitForJRTranscript];
     return self;
 }
 
 - (void)commonInitForJRTranscript {
-	_scrollView = [UIScrollView new];
-	[self addSubview:_scrollView];
-
-	_textView = [JRTextContainerView new];
-	[_scrollView addSubview:_textView];
-
-	_defaultFont = [UIFont fontWithName:@"Menlo" size:10];
+    _scrollView = [UIScrollView new];
+    [self addSubview:_scrollView];
+    
+    _textView = [JRTextContainerView new];
+    [_scrollView addSubview:_textView];
+    
+    _defaultFont = [UIFont fontWithName:@"Menlo" size:10];
 }
 
 - (void)appendString:(NSString*)string {
